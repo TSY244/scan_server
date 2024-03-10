@@ -2,7 +2,8 @@ import cmd
 import cmd_tools.woker as woker
 import configparser 
 import loguru
-
+import os
+import signal
 # init 
 loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level="ERROR")
 
@@ -46,7 +47,13 @@ class APP(cmd.Cmd):
                 
             else:
                 return False
-            
+    def do_exit(self, arg):
+        '''
+        exit
+        '''
+        pid=os.getpid()
+        os.kill(pid,signal.SIGTERM)
+
     def do_get_client(self, arg):
         '''
         get client list, no param
@@ -79,7 +86,15 @@ class APP(cmd.Cmd):
         if not self._check_arg("cmd",arg):
             print(APP.RED+"[-]  cmd error"+APP.END)
             return
-        self.woker.send_cmd(arg)
+        cmd=arg.split(" ")[0]
+        addr=arg.split(" ")[1]
+        
+        if self.woker.send_cmd(cmd,addr):
+            print(APP.GREEN+"[+]  run success"+APP.END)
+        else:
+            print(APP.RED+"[-]  run fail"+APP.END)
+
+    
 
 
 

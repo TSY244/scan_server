@@ -79,12 +79,15 @@ class Wroker():
             print(self.RED+"[-] port is not valid"+self.END)
             return False
         
-        clients=self.socket_server.get_client_info()
-        for client in clients:
-            if client[0]==ip and client[1]==port:
-                conn=client[1]
-                socket_server.send_msg(conn,cmd)
-                return True
+        # todo 获取client的socket，然后执行send_msg
+        conn=self.socket_server.get_client_socket((ip,port))
+        try:
+            conn.send(cmd.encode("utf-8"))
+            return True
+        except Exception as e:
+            loguru.logger.error(e)
+            return False
+
         
 
     def get_client(self)->list:

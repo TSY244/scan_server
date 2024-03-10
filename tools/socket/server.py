@@ -48,7 +48,7 @@ class Sock_Ser():
     def send_msg(self,conn,msg):
         conn.send(msg.encode("utf-8"))
 
-    def get_client_socket(self,addr:tuple):
+    def get_client_socket(self,addr:tuple)->socket.socket:
         '''
         use addr to get the client's socket
         param: 

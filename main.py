@@ -14,8 +14,8 @@ loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level
 def signal_handler(signal, frame):
     loguru.logger.info("You pressed Ctrl+C!")
     pid=os.getpid()
-    os.kill(pid)
-
+    os.kill(pid,signal)
+    
 def get_mode():
     config = configparser.ConfigParser()
     config.read('config.ini')
