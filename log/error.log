@@ -1,0 +1,8 @@
+2024-03-10 17:22:26.601 | ERROR    | __main__:main:32 - mode error
+2024-03-10 18:05:38.651 | ERROR    | cmd_tools.woker:__init__:31 - ip is not valid
+2024-03-11 00:00:50.250 | ERROR    | tools.ip.ip_tools:check_ip_if_valid:23 - ip is not valid
+2024-03-11 00:00:50.250 | ERROR    | tools.ip.ip_tools:check_ip_if_valid:23 - ip is not valid
+2024-03-11 00:00:50.250 | ERROR    | tools.ip.ip_tools:check_ip_if_valid:23 - ip is not valid
+2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
+2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
+2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
