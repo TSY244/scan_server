@@ -6,3 +6,9 @@
 2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
 2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
 2024-03-11 00:00:50.258 | ERROR    | cmd_tools.woker:__init__:40 - ip is not valid
+2024-03-11 19:55:08.395 | ERROR    | tools.socket.server:send_msg:58 - 'NoneType' object has no attribute 'send'
+2024-03-11 19:55:08.395 | ERROR    | tools.socket.server:send_msg:58 - 'NoneType' object has no attribute 'send'
+2024-03-11 19:55:08.395 | ERROR    | tools.socket.server:send_msg:58 - 'NoneType' object has no attribute 'send'
+2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'
+2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'
+2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'

@@ -6,7 +6,7 @@ import os
 import tools.ip.ip_tools as ip_tools 
 import tools.socket.server as socket_server
 import tools.socket.client as socket_client
-from  threading import Thread,Lock
+from  threading import Thread,Lock,Event
 import configparser
 
 
@@ -46,6 +46,7 @@ class Wroker():
         self.socket_server=socket_server.Sock_Ser(ip,port)
         self.socket_server.bind()
 
+
         # run server to send message
         run_server_t = Thread(target=self._run_server)
         run_server_t.start()
@@ -59,8 +60,7 @@ class Wroker():
             else:
                 print(self.GREEN+"[+] <client_info> connect from "+str(addr)+self.END)
                 
-
-    def send_cmd(self,cmd:str,addr:str)->bool:
+    def send_cmd(self,cmd:str,addr:str):
         '''
         send command to client
         param:
@@ -74,19 +74,22 @@ class Wroker():
 
         if not ip_tools.check_ip_if_valid(ip):
             print(self.RED+"[-] ip is not valid"+self.END)
-            return False
+            return False,None
         if not 0<=port<=65535:
             print(self.RED+"[-] port is not valid"+self.END)
-            return False
+            return False,None
         
-        # todo 获取client的socket，然后执行send_msg
         conn=self.socket_server.get_client_socket((ip,port))
         try:
-            conn.send(cmd.encode("utf-8"))
-            return True
+            if not self.socket_server.send_msg(conn,cmd):
+                print(self.RED+"[-] send cmd failed"+self.END)
+            ret= self.socket_server.recv_msg(conn,5)
+            return True,ret
+        except TimeoutError:
+            return True,None
         except Exception as e:
             loguru.logger.error(e)
-            return False
+            return False,None
 
         
 

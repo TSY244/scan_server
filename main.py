@@ -12,7 +12,7 @@ loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level
 
 # init signal
 def signal_handler(signal, frame):
-    loguru.logger.info("You pressed Ctrl+C!")
+    loguru.logger.info("You pressed Ctrl+xC!")
     pid=os.getpid()
     os.kill(pid,signal)
     

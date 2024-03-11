@@ -89,8 +89,13 @@ class APP(cmd.Cmd):
         cmd=arg.split(" ")[0]
         addr=arg.split(" ")[1]
         
-        if self.woker.send_cmd(cmd,addr):
+        ret=self.woker.send_cmd(cmd,addr)
+        if ret[0]:
             print(APP.GREEN+"[+]  run success"+APP.END)
+            if ret[1]!=None:
+                print(APP.GREEN+"[+]  ret: "+ret[1]+APP.END)
+            else:
+                print(APP.GREEN+"[+]  ret: is None"+APP.END)
         else:
             print(APP.RED+"[-]  run fail"+APP.END)
 
