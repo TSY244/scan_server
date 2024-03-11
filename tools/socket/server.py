@@ -46,7 +46,6 @@ class Sock_Ser():
     def get_client_info(self):
         if self._list_lock.acquire():
             client_list = [i[1] for i in self._client_list]
-            print(client_list)
             self._list_lock.release()
         return client_list
     

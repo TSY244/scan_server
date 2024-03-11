@@ -4,6 +4,7 @@ import configparser
 import loguru
 import os
 import signal
+
 # init 
 loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level="ERROR")
 
@@ -12,13 +13,12 @@ config=configparser.ConfigParser()
 config.read("config.ini")
 g_debug=config["COMMON"]["debug"]
 
-
-
 class APP(cmd.Cmd): 
     prompt = 'server>'
     RED="\033[0;31;40m"
     GREEN="\033[0;32;40m"
     END="\033[0m"
+
     def __init__(self,ip,port):
         '''
         param:
@@ -33,9 +33,9 @@ class APP(cmd.Cmd):
             if len(arg)==0:
                 return False
             arg_list=arg.split(" ")
-            if arg_list[0]=="kill":
+            if arg_list[0]=="kill" or arg_list[0]=="stop" or arg_list[0]=="run":
                 if len(arg_list)!=2:
-                    print(APP.RED+"[-]  kill client_ip:port"+APP.END)
+                    print(APP.RED+f"[-]  {func} {arg} client_ip:port"+APP.END)
                     return False
                 client_list=self.woker.get_client()
                 target=(arg_list[1].split(":")[0],int(arg_list[1].split(":")[1]))
@@ -44,9 +44,10 @@ class APP(cmd.Cmd):
                 else:
                     print(APP.RED+"[-]  client not exist"+APP.END)
                     return False
-                
             else:
                 return False
+            
+
     def do_exit(self, arg):
         '''
         exit
@@ -82,6 +83,8 @@ class APP(cmd.Cmd):
             server> cmd <client_ip:port> <command>
         <command>:
             kill: kill the client,for example: server> cmd kill client_ip:port
+            stop: stop the client,for example: server> cmd stop client_ip:port
+            run: run the client,for example: server> cmd run client_ip:port
         '''
         if not self._check_arg("cmd",arg):
             print(APP.RED+"[-]  cmd error"+APP.END)
@@ -98,11 +101,22 @@ class APP(cmd.Cmd):
                 print(APP.GREEN+"[+]  ret: is None"+APP.END)
         else:
             print(APP.RED+"[-]  run fail"+APP.END)
-
-    
-
-
-
+        
+    def do_get(self, arg):
+        '''
+        get info from elasticsearch
+        prompt:
+            server> get info_num
+            server> get vuls_num
+        '''
+        if arg=="info_num":
+            size=self.woker.get_es_info_num()
+            print(APP.GREEN+f"[+]  info_num: {size}"+APP.END)
+        elif arg=="vuls_num":
+            size=self.woker.get_es_vuls_num()
+            print(APP.GREEN+f"[+]  vuls_num: {size}"+APP.END)
+        else:
+            print(APP.RED+"[-]  get error"+APP.END)
 
 
 

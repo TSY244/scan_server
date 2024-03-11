@@ -8,6 +8,7 @@ import tools.socket.server as socket_server
 import tools.socket.client as socket_client
 from  threading import Thread,Lock,Event
 import configparser
+import tools.UseElasticSearch.UseElasticSearch as es
 
 
 
@@ -19,11 +20,14 @@ g_debug=config["COMMON"]["debug"]
 # init loguru
 loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level="ERROR")
 
+
+
 class Wroker(): 
     RED="\033[0;31;40m"
     GREEN="\033[0;32;40m"
     BLUE="\033[0;34;40m"
     END="\033[0m"
+
     def __init__(self,ip,port):
         '''
         param:
@@ -50,7 +54,34 @@ class Wroker():
         # run server to send message
         run_server_t = Thread(target=self._run_server)
         run_server_t.start()
-        # self._run_server()        
+        # self._run_server()
+
+        # es
+        es_config=Wroker._get_config()
+        es_host=es_config["host"]
+        es_port=es_config["port"]
+        self._es_info_index=es_config["info_index"]
+        self._es_vuls_index=es_config["vuls_index"]
+        self._es=es.MyElasticSearch(es_host,es_port)
+        self._es.connect()
+
+    def _get_config():
+        config=configparser.ConfigParser()
+        config.read("config.ini")
+
+        # es
+        es_host=config["elasticsearch"]["host"]
+        es_port=int(config["elasticsearch"]["port"])
+        es_info_index=config["elasticsearch"]["info_index"]
+        es_vuls_index=config["elasticsearch"]["vuls_index"]
+        es={
+            "host":es_host,
+            "port":es_port,
+            "info_index":es_info_index,
+            "vuls_index":es_vuls_index
+        }
+
+        return es
 
     def _run_server(self):
         while True:
@@ -98,5 +129,9 @@ class Wroker():
     
     def get_client_num(self):
         return self.socket_server.get_client_num()
-
-
+    
+    def get_es_info_num(self):
+        return self._es.get_index_num(self._es_info_index)
+    
+    def get_es_vuls_num(self):
+        return self._es.get_index_num(self._es_vuls_index)
