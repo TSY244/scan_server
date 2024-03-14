@@ -17,14 +17,18 @@ from threading  import Thread
 # init loguru
 loguru.logger.add("/log/error.log", rotation="500 MB", retention="10 days", level="ERROR")
 
+
+# get debug
+config=configparser.ConfigParser()
+config.read("config.ini")
+g_debug=config["COMMON"]["debug"]
+
+
 # 添加信号
 def signal_handler(signal, frame):
     loguru.logger.error("{0}  -->  {1}".format(signal, frame))
     pid = os.getpid()
     os.kill(pid, signal)
-
-
-g_debug = 0 # 1 DEBUG
 
 
 def get_config():

@@ -1,5 +1,9 @@
 from elasticsearch import Elasticsearch
 
+
+
+
+
 class MyElasticSearch:
     def __init__(self, host, port,user=None,passwd=None):
         self._user=user
@@ -33,6 +37,7 @@ class MyElasticSearch:
             return True
         else:
             raise Exception("index not exists")
+            
         
     def insert_data(self,index_name,data):
         self._es.index(index=index_name,document=data)

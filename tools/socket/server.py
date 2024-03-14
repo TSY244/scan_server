@@ -4,7 +4,10 @@ from threading import Lock
 import select
 
 # init 
-loguru.logger.add("error.log", format="{time} {level} {message}", level="ERROR", rotation="1 MB", compression="zip")
+loguru.logger.add("log/error.log", format="{time} {level} {message}", level="ERROR", rotation="1 MB", compression="zip")
+
+# set port multiple
+
 
 class Sock_Ser():
     def __init__(self,ip,port):
@@ -16,6 +19,7 @@ class Sock_Ser():
 
     def bind(self):
         self._sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        self._sock.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
         self._sock.bind((self._ip,self._port))
         self._sock.listen(5)
 
@@ -36,6 +40,12 @@ class Sock_Ser():
         except socket.timeout:
             pass
         return conn,addr
+    
+    def get_client(self):
+        if self._list_lock.acquire():
+            client_list = self._client_list
+            self._list_lock.release()
+        return client_list
     
     def get_client_num(self):
         if self._list_lock.acquire():
@@ -91,6 +101,44 @@ class Sock_Ser():
                     return i[0]
             self._list_lock.release()
         return None
+    
+    def close_client(self,conn):
+        conn.close()
+        if self._list_lock.acquire():
+            for i in self._client_list:
+                if i[0] == conn:
+                    self._client_list.remove(i)
+                    break
+            else:
+                loguru.logger.error("client not in the list")
+            self._list_lock.release()
+        return True
+    
+    def check_socket(self,conn:socket.socket):
+        '''
+        check if the socket is valid
+        '''
+        try:
+            self.send_msg(conn,"is_live")
+            self.recv_msg(conn,5)
+            return True
+        except TimeoutError:
+            return False
+        except Exception as e:
+            return False
+        
+    def delete_client(self,addr:tuple):
+        if self._list_lock.acquire():
+            for i in self._client_list:
+                if i[1] == addr:
+                    try:
+                        i[0].close()
+                    except Exception as e:
+                        pass
+                    self._client_list.remove(i)
+                    break
+            self._list_lock.release()
+        return True
        
     
     

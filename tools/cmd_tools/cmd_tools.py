@@ -3,6 +3,7 @@ import cmd_tools.woker as woker
 import configparser 
 import loguru
 import os
+import sys
 import signal
 
 # init 
@@ -17,6 +18,7 @@ class APP(cmd.Cmd):
     prompt = 'server>'
     RED="\033[0;31;40m"
     GREEN="\033[0;32;40m"
+    BLUE="\033[0;34;40m"
     END="\033[0m"
 
     def __init__(self,ip,port):
@@ -26,14 +28,18 @@ class APP(cmd.Cmd):
             port: server port
         '''
         super().__init__()
-        self.woker=woker.Wroker(ip,port)
+        try:
+            self.woker=woker.Wroker(ip,port)
+        except Exception as e:
+            loguru.logger.error(e)
+            sys.exit(1)
 
     def _check_arg(self,func,arg):
         if func=="cmd":
             if len(arg)==0:
                 return False
             arg_list=arg.split(" ")
-            if arg_list[0]=="kill" or arg_list[0]=="stop" or arg_list[0]=="run":
+            if arg_list[0]=="kill" or arg_list[0]=="stop" or arg_list[0]=="start":
                 if len(arg_list)!=2:
                     print(APP.RED+f"[-]  {func} {arg} client_ip:port"+APP.END)
                     return False
@@ -67,7 +73,12 @@ class APP(cmd.Cmd):
         for client in client_list:
             if g_debug:
                 print(type(client))
-            print(APP.GREEN+"[+] <client_info> "+str(client[0])+"  "+str(client[1])+APP.END)
+            addr=(client[0],client[1])
+            status=self.woker.get_client_status(addr)
+            if status=="stop":
+                print(APP.BLUE+"[+] <client_info> "+str(client[0])+"  "+str(client[1])+" "+status+APP.END)
+                continue
+            print(APP.GREEN+"[+] <client_info> "+str(client[0])+"  "+str(client[1])+" "+status+APP.END)
 
     def do_get_client_num(self, arg):
         '''
@@ -84,7 +95,7 @@ class APP(cmd.Cmd):
         <command>:
             kill: kill the client,for example: server> cmd kill client_ip:port
             stop: stop the client,for example: server> cmd stop client_ip:port
-            run: run the client,for example: server> cmd run client_ip:port
+            start: start the client,for example: server> cmd run client_ip:port
         '''
         if not self._check_arg("cmd",arg):
             print(APP.RED+"[-]  cmd error"+APP.END)
@@ -102,6 +113,13 @@ class APP(cmd.Cmd):
         else:
             print(APP.RED+"[-]  run fail"+APP.END)
         
+        ip=addr.split(":")[0]
+        port=int(addr.split(":")[1])
+        if cmd=="stop":
+            self.woker.set_client_status((ip,port),"stop")
+        elif cmd=="start":
+            self.woker.set_client_status((ip,port),"running")
+
     def do_get(self, arg):
         '''
         get info from elasticsearch
@@ -117,6 +135,18 @@ class APP(cmd.Cmd):
             print(APP.GREEN+f"[+]  vuls_num: {size}"+APP.END)
         else:
             print(APP.RED+"[-]  get error"+APP.END)
+            
+    def do_delete(self, arg):
+        '''
+        delete info from elasticsearch
+        prompt:
+            server> delete info
+            server> delete vuls
+        '''
+        if self.woker.delete_es_index(arg):
+            print(APP.GREEN+"[+]  delete success"+APP.END)
+        else:
+            print(APP.RED+"[-]  delete fail"+APP.END)
 
 
 

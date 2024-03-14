@@ -12,3 +12,155 @@
 2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'
 2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'
 2024-03-11 19:55:08.403 | ERROR    | cmd_tools.woker:send_cmd:92 - 'NoneType' object has no attribute 'recv'
+2024-03-12T00:04:41.967911+0800 ERROR ip can't connect
+2024-03-12 00:04:41.967 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:04:41.967 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:04:41.967 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12T00:05:30.711603+0800 ERROR ip can't connect
+2024-03-12 00:05:30.711 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:05:30.711 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:05:30.711 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12T00:05:55.007652+0800 ERROR ip can't connect
+2024-03-12 00:05:55.007 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:05:55.007 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:05:55.007 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12T00:06:36.170251+0800 ERROR ip can't connect
+2024-03-12 00:06:36.170 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:06:36.170 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:06:36.170 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12T00:06:36.174713+0800 ERROR es host is not connectable
+2024-03-12 00:06:36.174 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12 00:06:36.174 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12 00:06:36.174 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12T00:07:11.250760+0800 ERROR ip can't connect
+2024-03-12 00:07:11.250 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:07:11.250 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12 00:07:11.250 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-03-12T00:07:11.256575+0800 ERROR es host is not connectable
+2024-03-12 00:07:11.256 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12 00:07:11.256 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12 00:07:11.256 | ERROR    | cmd_tools.woker:__init__:66 - es host is not connectable
+2024-03-12T00:39:07.720695+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:39:07.720 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:39:07.720 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:39:07.720 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:47:43.230387+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:47:43.230 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:47:43.230 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:47:43.230 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:25.620292+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.620 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.620 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.620 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:25.622307+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.622 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.622 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:25.622 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:27.316603+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.316 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.316 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.316 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:27.318640+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.318 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.318 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.318 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:27.501123+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.501 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.501 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.501 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:50:27.503294+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.503 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.503 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:50:27.503 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:52.402644+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.402 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.402 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.402 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:52.404585+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.404 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.404 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.404 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:52.990489+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.990 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.990 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.990 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:52.992643+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.992 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.992 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:52.992 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:53.195148+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.195 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.195 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.195 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:53.216046+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.216 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.216 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.216 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:53.405534+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.405 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.405 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.405 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T00:54:53.407533+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.407 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.407 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 00:54:53.407 | ERROR    | cmd_tools.woker:send_cmd:126 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T19:56:00.451454+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 19:56:00.451 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 19:56:00.451 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 19:56:00.451 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:04:33.210863+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-03-12 23:04:33.210 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-03-12 23:04:33.210 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-03-12 23:04:33.210 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-03-12T23:17:43.610977+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.610 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.610 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.610 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:43.612588+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.612 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.612 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.612 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:43.809209+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.809 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.809 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.809 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:43.811209+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.811 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.811 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:43.811 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.267623+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.267 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.267 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.267 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.269625+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.269 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.269 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.269 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.433714+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.433 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.433 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.433 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.435715+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.435 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.435 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.435 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.586800+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.586 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.586 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.586 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.588958+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.588 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.588 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.588 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.721627+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.721 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.721 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.721 | ERROR    | tools.socket.server:send_msg:61 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12T23:17:44.724111+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.724 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.724 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-12 23:17:44.724 | ERROR    | cmd_tools.woker:send_cmd:132 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-13T00:08:32.619681+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-13 00:08:32.619 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-13 00:08:32.619 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-13 00:08:32.619 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
