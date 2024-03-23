@@ -11,11 +11,12 @@ import configparser
 import tools.UseElasticSearch.UseElasticSearch as es
 import signal
 import time
+import tools.FileTransfer.server_tcp as upload_server
 
 # get if debug
 config=configparser.ConfigParser()
 config.read("config.ini")
-g_debug=config["COMMON"]["debug"]
+g_debug=int(config["COMMON"]["debug"])
 
 # init loguru
 loguru.logger.add("log/error.log", rotation="500 MB", retention="10 days", level="ERROR")
@@ -76,6 +77,9 @@ class Wroker():
         self._es=es.MyElasticSearch(es_host,es_port)
         self._es.connect()
 
+        # remote load config
+        
+
     def _check_socket(self):
         '''
         check if socket is connectable
@@ -108,21 +112,33 @@ class Wroker():
 
         return es
 
+    def _get_file_path(self):
+        file_path=os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        if g_debug:
+            loguru.logger.info(file_path)
+        return file_path
+            
+    
     def _run_server(self):
         while True:
             conn,addr = self.socket_server.accept()
+            # file_path=self._get_file_path()
+            # if g_debug:
+            #     loguru.logger.info(file_path)
+            # upload_server.run(self.socket_server,conn,file_path,"config.ini")
             self.set_client_status(addr,"running")
             if g_debug:
                 loguru.logger.info(f"connect from {addr}")
             else:
                 print(self.GREEN+"[+] <client_info> connect from "+str(addr)+self.END)
                 
-    def send_cmd(self,cmd:str,addr:str):
+    def send_cmd(self,cmd:str,addr:str,*args):
         '''
         send command to client
         param:
             cmd: command
             addr: client ip:port
+            args: command's args
         return:
             bool: if send success
         '''
@@ -174,4 +190,5 @@ class Wroker():
             ret=self._es.delete_index(index)
         except Exception as e:
             return False
+    
         

@@ -21,7 +21,7 @@ loguru.logger.add("/log/error.log", rotation="500 MB", retention="10 days", leve
 # get debug
 config=configparser.ConfigParser()
 config.read("config.ini")
-g_debug=config["COMMON"]["debug"]
+g_debug=int(config["COMMON"]["debug"])
 
 
 # 添加信号

@@ -1,11 +1,22 @@
-import tools.UseElasticSearch.UseElasticSearch as es
+import socket
+import tools.FileTransfer.server_tcp as upload_file
+import os
+import configparser
 
 
-use_es=es.MyElasticSearch("192.168.79.128","9200")
 
-use_es.connect()
 
-print(use_es.get_index_num("vuls"))
-ret=use_es.search_data("vuls",size=10)
+server=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+server.bind(("127.0.0.1",9999))
+server.listen(5)
+
+client,addr=server.accept()
+
+config=configparser.ConfigParser()
+config.read("config.ini")
+file_path=config["COMMON"]["cli_conf_path"]
+
+upload_file.run(server,client,file_path,"client_config.ini")
+
 
 # print(use_es.get_index_num())
