@@ -92,7 +92,7 @@ class Wroker():
     def _run_check_socket(self):
         while True:
             self._check_socket()
-            time.sleep(60) 
+            time.sleep(10) 
              
     def _get_config():
         config=configparser.ConfigParser()

@@ -236,3 +236,147 @@
 2024-03-23 13:52:40.220 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
 2024-03-23 13:52:40.220 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
 2024-03-23 13:52:40.220 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-03-30T14:14:10.872031+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:14:10.872 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:14:10.872 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:14:10.872 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:43:58.052179+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:43:58.052 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:43:58.052 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:43:58.052 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:45:58.083474+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:45:58.083 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:45:58.083 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:45:58.083 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:46:58.100597+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:46:58.100 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:46:58.100 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:46:58.100 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:48:58.122930+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:48:58.122 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:48:58.122 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:48:58.122 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:49:58.132364+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:49:58.132 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:49:58.132 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:49:58.132 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30T14:54:58.294651+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:54:58.294 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:54:58.294 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-03-30 14:54:58.294 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-03T00:01:17.346082+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:01:17.346 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:01:17.346 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:01:17.346 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:03:17.361638+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:03:17.361 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:03:17.361 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:03:17.361 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:05:17.381517+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:05:17.381 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:05:17.381 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:05:17.381 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:08:17.410788+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:08:17.410 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:08:17.410 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:08:17.410 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:10:17.428888+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:10:17.428 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:10:17.428 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:10:17.428 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:11:17.440075+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:11:17.440 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:11:17.440 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:11:17.440 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:14:17.460802+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:14:17.460 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:14:17.460 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:14:17.460 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:16:17.480690+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:16:17.480 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:16:17.480 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:16:17.480 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T00:42:52.063523+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:42:52.063 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:42:52.063 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 00:42:52.063 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:09:27.090509+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:09:27.090 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:09:27.090 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:09:27.090 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:11:27.127318+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:11:27.127 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:11:27.127 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:11:27.127 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:33:27.338542+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:33:27.338 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:33:27.338 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:33:27.338 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:51:03.135234+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:51:03.135 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:51:03.135 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:51:03.135 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:54:03.163561+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:54:03.163 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:54:03.163 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:54:03.163 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T21:56:03.168614+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:56:03.168 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:56:03.168 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 21:56:03.168 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T22:08:03.270670+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 22:08:03.270 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 22:08:03.270 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03 22:08:03.270 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-03T23:44:26.169183+0800 ERROR ip can't connect
+2024-04-03 23:44:26.169 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-03 23:44:26.169 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-03 23:44:26.169 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-03T23:44:26.172167+0800 ERROR es host is not connectable
+2024-04-03 23:44:26.172 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
+2024-04-03 23:44:26.172 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
+2024-04-03 23:44:26.172 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
+2024-04-03T23:44:46.641303+0800 ERROR redis can not connect
+2024-04-03 23:44:46.641 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-03 23:44:46.641 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-03 23:44:46.641 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-03T23:45:12.696767+0800 ERROR redis can not connect
+2024-04-03 23:45:12.696 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-03 23:45:12.696 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-03 23:45:12.696 | ERROR    | tools.redis.my_redis:check_if_connectable:133 - redis can not connect
+2024-04-04T00:41:26.749988+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 00:41:26.749 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 00:41:26.749 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 00:41:26.749 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04T00:43:26.804893+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:43:26.804 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:43:26.804 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:43:26.804 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04T00:59:26.951892+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:59:26.951 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:59:26.951 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 00:59:26.951 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04T01:00:26.962169+0800 ERROR [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 01:00:26.962 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 01:00:26.962 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04 01:00:26.962 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2024-04-04T01:12:27.101043+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:12:27.101 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:12:27.101 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:12:27.101 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04T01:44:39.515623+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:44:39.515 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:44:39.515 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:44:39.515 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04T01:45:39.886324+0800 ERROR [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:45:39.886 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:45:39.886 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04 01:45:39.886 | ERROR    | tools.socket.server:send_msg:67 - [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+2024-04-04T08:59:11.833398+0800 ERROR ip can't connect
+2024-04-04 08:59:11.833 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-04 08:59:11.833 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-04 08:59:11.833 | ERROR    | tools.ip.ip_tools:check_ip_if_connectable:68 - ip can't connect
+2024-04-04T08:59:11.836413+0800 ERROR es host is not connectable
+2024-04-04 08:59:11.836 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
+2024-04-04 08:59:11.836 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
+2024-04-04 08:59:11.836 | ERROR    | cmd_tools.woker:__init__:74 - es host is not connectable
